@@ -1,0 +1,132 @@
+
+:root {
+    --font-princiapl: "Montserrat", sans-serif;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --cinza: #696969;
+    --cinza-claro: #808080;
+    --cinza-branco: #D3D3D3;
+    --vermelho: #FF3A54;
+    --vermelho-claro: #FC7587;
+    --verde: #27AE52;
+    --verde-claro: #6FEC97;
+    --laranja: #FE9422;
+    --borda-redonda: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-princiapl);
+    background-color: var(--cinza-branco);
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    min-height: 80vh; */
+}
+
+.btn {
+    color: var(--branco);
+    font-weight: 700;
+    border: 0;
+}
+
+.container {
+    background-color: var(--cinza);
+    color: var(--cinza-branco);
+    padding: 1em;
+}
+
+.cabecalho {
+    display: flex;
+}
+
+.cabecalho > img {
+    padding-right: 1em;
+}
+
+.container-cadastro {
+    background-color: var(--cinza-claro);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 1em 0;
+    align-items: center;
+    border-radius: var(--borda-redonda);
+}
+
+.container-cadastro__texto-tarefa {
+    padding: 0.3em;
+    font-size: 1em;
+    border-radius: 15px;
+}
+
+.btn-cadastrar {
+    background-color: var(--cinza);
+    border: 1px solid var(--branco);
+    border-radius: 12px;
+    padding: 0.5em 0.3em;
+}
+
+.btn-cadastrar:hover {
+    border: 1px solid var(--laranja);
+    color: var(--laranja);
+    background-color: var(--);
+    font-weight: 700;
+}
+
+.container-listagem__tarefa {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cinza-claro);
+    padding: 0.3em;
+    margin: 0.3em 0;
+    border-radius: var(--borda-redonda);
+    font-weight: 600;
+}
+
+.tarefa-concluida {
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.container-listagem__botoes {
+    color: var(--cinza-branco);
+    display: flex;
+    align-items: center;
+}
+
+.btn-concluir {
+    background-color: var(--verde);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.btn-concluir:hover {
+    background-color: var(--verde-claro);
+    color: var(--preto);
+}
+
+.btn-deletar {
+    background-color: var(--vermelho);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.btn-deletar:hover {
+    background-color: var(--vermelho-claro);
+    color: var(--preto);
+}
+
+.btn-concluir,
+.btn-deletar {
+
+    padding: 0.5em;
+}

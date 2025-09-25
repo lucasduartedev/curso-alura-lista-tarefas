@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
     <title>Lista de tarefas</title>
 </head>
 <body>
-    <div class="container peincipal">
-        <header>
-            <h1>Lista de tarefas</h1>
+    <div class="container principal">
+        
+        <header class="cabecalho">
+            <img src="img/mobile.svg" alt="Imagem de representação de celular">
+            <h1 class="cabecalho__titulo">Lista de tarefas</h1>
         </header>
+
+        <hr/>
+
+        <div class="container-cadastro">
+            <input type="text" name="caixa-tarefa" id="caixa-tarefa" placeholder="Nova tarefa" class="container-cadastro__texto-tarefa">
+            <button class="btn btn-cadastrar">Cadastrar</button>    
+        </div>
+
+        <div class="container-listagem">
+            <ul class="container-listagem__lista-tarefas">
+                <li class="container-listagem__tarefa">
+                    <p class="container-listagem__tarefa__descricao">Comprar um carro</p>
+                    <div class="container-listagem__botoes">
+                        <button class="btn btn-concluir">Concluir</button>    
+                        <button class="btn btn-deletar">deletar</button>
+                    </div>
+                </li>
+                <li class="container-listagem__tarefa">
+                    <p class="container-listagem__tarefa__descricao tarefa-concluida">Comprar um carro</p>
+                    <div class="container-listagem__botoes">
+                        <button class="btn btn-concluir">Concluir</button>    
+                        <button class="btn btn-deletar">deletar</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </body>
 </html>

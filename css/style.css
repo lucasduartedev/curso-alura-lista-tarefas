@@ -22,12 +22,6 @@
 body {
     font-family: var(--font-princiapl);
     background-color: var(--cinza-branco);
-
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vh;
-    min-height: 80vh; */
 }
 
 .btn {
@@ -44,10 +38,18 @@ body {
 
 .cabecalho {
     display: flex;
+    align-items: center;
 }
 
-.cabecalho > img {
-    padding-right: 1em;
+.cabecalho__img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+    background: url("../img/mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 .container-cadastro {
@@ -129,4 +131,29 @@ body {
 .btn-deletar {
 
     padding: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container {
+        min-width: 755px;
+        margin-top: 2em;
+    }
+
+    .cabecalho__img {
+       background: url("../img/tablet.svg");
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__img {
+        background: url("../img/desktop.svg");
+    }
 }

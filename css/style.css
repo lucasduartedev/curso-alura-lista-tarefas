@@ -116,6 +116,12 @@ body {
     color: var(--preto);
 }
 
+.btn-concluir-tachado {
+    text-decoration: dashed;
+    background-color: var(--verde-claro);
+    color: var(--cinza);
+}
+
 .btn-deletar {
     background-color: var(--vermelho);
     border-top-right-radius: 25px;

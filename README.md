@@ -25,3 +25,16 @@
 - Código modularizado;
 - Exportar/Importar de Componentes.
 
+## Imagens - Resultado Final
+
+- Mobile - Ocupando a tela inteira por ter espaço reduzido
+
+<img src="./img/Screenshot-Mobile.png">
+
+- Tablet
+
+<img src="./img/Screenshot-Tablet.png">
+
+- Desktop - Limite do tamanho da listagem das tarefas
+
+<img src="./img/Screenshot-Laptop.png">

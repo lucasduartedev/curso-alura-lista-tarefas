@@ -23,13 +23,13 @@
         <hr/>
 
         <div class="container-cadastro">
-            <input type="text" name="caixa-tarefa" id="caixa-tarefa" placeholder="Nova tarefa" class="container-cadastro__texto-tarefa">
-            <button class="btn btn-cadastrar">Cadastrar</button>    
+            <input type="text" name="caixa-tarefa" id="caixa-tarefa" placeholder="Nova tarefa" class="container-cadastro__texto-tarefa" data-texto-nova-tarefa>
+            <button class="btn btn-cadastrar" data-btn-cadastrar>Cadastrar</button>    
         </div>
 
         <div class="container-listagem">
-            <ul class="container-listagem__lista-tarefas">
-
+            <ul class="container-listagem__lista-tarefas" data-listagem-tarefas>
+<!-- 
                 <li class="container-listagem__tarefa">
                     <p class="container-listagem__tarefa__descricao">Comprar um carro</p>
                     <div class="container-listagem__botoes">
@@ -44,11 +44,14 @@
                         <button class="btn btn-concluir">Concluir</button>    
                         <button class="btn btn-deletar">deletar</button>
                     </div>
-                </li>
+                </li> -->
 
             </ul>
         </div>
 
     </div>
+
+    <script src="./js/main.js" type="module"></script>
+
 </body>
 </html>
